@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 # Specify the URL to your package here.
 # This URL must be accessible via pip install
 
-PACKAGE_URL = 'git+https://github.com/madendorff/functions@'
+PACKAGE_URL = 'git+https://github.com/mbenav3/functions@'
 
 class HelloWorld(BaseTransformer):
 

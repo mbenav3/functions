@@ -18,7 +18,7 @@ Place your credentials in a separate file that you don't check into the repo.
 
 '''
 
-with open('credentials_as_dev.json', encoding='utf-8') as F:
+with open('credentials.json', encoding='utf-8') as F:
     credentials = json.loads(F.read())
 db_schema = None
 db = Database(credentials=credentials)
@@ -41,7 +41,7 @@ This file will be written to the working directory.
 
 from custom.functions import HelloWorld
 fn = HelloWorld(
-        name = 'Mike',
+        name = 'Marco',
         greeting_col = 'greeting')
 fn.execute_local_test(db=db,db_schema=db_schema)
 
